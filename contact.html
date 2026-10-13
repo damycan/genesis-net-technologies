@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Registration - Genesis Net Technologies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Genesis Net Technologies</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Student Course Registration & Inquiry</h2>
+        <p>Fill out the form below to register for IT courses or inquire about our services.</p>
+
+        <form id="registration-form" action="https://formspree.io/f/myeknjpg" method="POST" class="form-card">
+            
+            <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+256..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-type">Interest / Course Program *</label>
+                <select id="service-type" name="service" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Computer Literacy & Essentials">Computer Literacy & Essentials</option>
+                    <option value="Web Development & WordPress">Web Development & WordPress</option>
+                    <option value="Networking & Hardware Maintenance">Networking & Hardware Maintenance</option>
+                    <option value="General IT Consulting / Services">General IT Consulting / Services</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Details / Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your schedule or specific requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Registration</button>
+            <p id="form-status"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Genesis Net Technologies. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
