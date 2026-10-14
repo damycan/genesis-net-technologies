@@ -1,0 +1,291 @@
+/* ==========================================
+   GENESIS NET TECHNOLOGIES - MAIN STYLESHEET
+   ========================================== */
+
+/* --- Root Variables & Theme Colors --- */
+:root {
+    primary-color: #0056b3;
+    primary-dark: #003d82;
+    accent-color: #ff6b00;
+    bg-light: #f8f9fa;
+    bg-card: #ffffff;
+    text-dark: #222222;
+    text-muted: #666666;
+    border-color: #e2e8f0;
+    shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    background-color: #78a8e0;
+}
+h1{
+color: rgb(221, 21, 21);
+background-color: #45423f;
+text-align: center;
+
+}
+class-h1{
+color: red;
+
+}
+
+/* VIDEOS*/
+
+}
+/*Gallery*/
+
+
+
+
+/* --- Global Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Utility Layout Helpers --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Header & Navigation --- */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+height: 64px;
+width: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: var(--transition);
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+    color: var(--primary-color);
+    background-color: rgba(0, 86, 179, 0.08);
+}
+
+.nav-portal-btn {
+    font-weight: 600;
+    color: var(--primary-color) !important;
+}
+
+.nav-cta {
+    background-color: #25d366;
+    color: #ffffff !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-cta:hover {
+    background-color: #1eb954;
+}
+
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+/* --- Main Content Sections --- */
+section {
+    padding: 3.5rem 0;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* --- Card Grid Layout --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #1a202c;
+    color: #a0aec0;
+    padding: 1.8rem 0;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* --- Responsive Styles --- */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none; /* Can be toggled with JS script */
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+}
+img{
+width: 240px;
+height: 100px;
+
+}
+
+
+
+/* Contact & Registration Form Styles */
+.container {
+    max-width: auto;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-height: auto;
+}
+
+.form-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #004b99;
+}
